@@ -1,0 +1,120 @@
+// Apps section
+
+.apps {
+    padding-top: 100px;
+}
+
+
+.apps__head{
+    @include flexItems();
+    @include for-phone-only{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+.apps__info-intro {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: $primary-color;
+    margin-bottom: 15px;
+
+    @include for-tablet-only {
+        font-size: 14px;
+    }
+
+    @include for-phone-only {
+        font-size: 12px;
+    }
+}
+
+.apps__info-title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 145%;
+    color: $secondary-color;
+    opacity: 0.8;
+    max-width: 405px;
+    margin-bottom: 30px;
+
+    @include for-tablet-only {
+        font-size: 34px;
+    }
+
+    @include for-phone-only {
+        font-size: 28px;
+    }
+}
+
+
+.apps__info-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 437px;
+    color: #190C05;
+    margin-bottom: 40px;
+    opacity: 0.6;
+
+    @include for-tablet-only {
+        font-size: 15px;
+    }
+
+    @include for-phone-only {
+        font-size: 13px;
+    }
+}
+
+.apps__head-image{
+    overflow: hidden;
+}
+
+
+.apps__head-image img{
+    width: 100%;
+    height: 100%;
+    @include transition-ease();
+}
+
+.apps__head-image:hover img{
+    @include transform();
+}
+
+.app__links{
+    @include for-bgtablet-only{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+  
+}
+.apps__button{
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: $color;
+padding: 10px;
+border-radius: 10px;
+max-width: 156px;
+display: inline-block;
+background-color: $secondary-color;
+@include transition-ease();
+}
+
+
+.apps__button:hover{
+    cursor: pointer;
+    @include transform();
+    box-shadow: 10px 10px 25px 10px rgba(173, 180, 187, 0.25);
+}
+
+.apps__button:not(:last-child){
+    margin-right: 30px;
+}
+
+.word{
+display: block;
+    font-size: 19px;
+}

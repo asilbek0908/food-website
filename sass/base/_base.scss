@@ -14,8 +14,10 @@ html{
     scroll-behavior: smooth;
 }
 
-ul li{
-    list-style: none;
+ul {
+    li{
+        list-style: none;
+    }
 }
 
 a {
@@ -30,3 +32,22 @@ a {
     text-transform: capitalize;
 }
 
+
+.button {
+    background: linear-gradient(to right, #F6762C 0%, #ed239f 50%, #C65311 100%);
+    background-size: 200% auto;
+    cursor: pointer; 
+    box-shadow: 10px 10px 25px 10px rgba(54, 83, 107, 0.25);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    line-height: 24px;
+    color:$color;
+    padding: 15px 30px;
+    @include transition-ease();
+}
+
+.button:hover {
+    background-position: right center;
+}

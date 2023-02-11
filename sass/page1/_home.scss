@@ -1,0 +1,101 @@
+// Home section
+
+.home {
+    padding-top: 100px;
+    background-color: $bg-color;
+}
+
+.home__head {
+    @include flexItems();
+
+    @include for-phone-only {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+.home__info-intro {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.105em;
+    color: $primary-color;
+    margin-bottom: 17px;
+
+    @include for-tablet-only {
+        font-size: 14px;
+    }
+
+    @include for-phone-only {
+        font-size: 12px;
+    }
+
+
+}
+
+.line {
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: $primary-color;
+}
+
+.home__info-title {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 130%;
+    letter-spacing: 0.015em;
+    color: $secondary-color;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    max-width: 502px;
+
+    @include for-tablet-only {
+        font-size: 35px;
+
+    }
+
+    @include for-phone-only {
+        font-size: 28px;
+    }
+}
+
+.home__info-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: $secondary-color;
+    opacity: 0.6;
+    max-width: 432px;
+    margin-bottom: 42px;
+
+    @include for-tablet-only {
+        font-size: 15px;
+    }
+
+    @include for-phone-only {
+        font-size: 13px;
+    }
+}
+
+.home__info-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color;
+    padding: 15px 30px;
+}
+
+.home__head-image {
+    overflow: hidden;
+}
+
+.home__head-image img {
+    width: 100%;
+    height: 100%;
+    @include transition-ease();
+}
+
+.home__head-image:hover img {
+    @include transform();
+}

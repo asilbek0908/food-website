@@ -4,8 +4,28 @@
     align-items: center;
 }
 
+@mixin for-bgtablet-only {
+    @media screen and (max-width: 915px) {
+        @content;
+    }
+}
+
+
+@mixin for-tablet-only {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+@mixin for-phone-only {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
 @mixin transition-ease {
-    transition: all 0.7s ease;
+    transition: all 1s ease;
 }
 
 @mixin transform {
@@ -14,11 +34,4 @@
 
 @mixin transform2 {
     transform: rotate(360deg);
-}
-
-
-@mixin for-phone-only {
-    @media screen and (max-width: 576px) {
-        @content;
-    }
 }

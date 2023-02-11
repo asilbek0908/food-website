@@ -12,12 +12,274 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./images/logo (11).svg">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./sass/main.css">
     <title>Food delivery</title>
 </head>
 
 <body>
-    <
+    <!-- Header section -->
+    <section id="header" class="header">
+        <div class="container">
+            <div class="header__head">
+                <input class="head" type="checkbox" id="menu" name="menu">
+                <a class="header__head-logo" href="./index.html">
+                    <img src="./images/logo (11).svg" alt="Food delivery">
+                </a>
+
+                <nav class="header__navigation">
+                    <label for="menu" class="remove__button">
+                        <img src="./images/button.png" alt="remove__button">
+                    </label>
+                    <ul class="header__nav-items">
+
+                        <li class="header__nav-item active">
+                            <a class="header__links" href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__links" href="#about">
+                                About
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__links" href="#services">
+                                Services
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__links" href="#apps">
+                                Apps
+                            </a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__links" href="#recipes">
+                                Recipes
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="header__contact" href="./contact.html">
+                        Sign up
+                    </a>
+                </nav>
+
+                <label class="menu__bar" for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </section>
+    <!-- Header section -->
+
+    <!-- Home section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home__head">
+
+                <div class="home__head-info">
+                    <h3 class="home__info-intro to-uppercase">
+                        food delivery
+                        <span class="line"></span>
+                    </h3>
+                    <h1 class="home__info-title to-capitalize">observe the food feel the taste</h1>
+                    <p class="home__info-desc">Add a joy of best Taste. Foodie Moments. Taste the Best that trying to
+                        tie in a space you.
+                    </p>
+                    <button class="home__info-button button to-capitalize" type="button">order now</button>
+                </div>
+
+                <div class="home__head-image">
+                    <img src="./images/image-1 (6).png" alt="image-1">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Home section -->
+
+    <!-- About section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about__head">
+                <div class="about__head-image">
+                    <img src="./images/image-2 (3).png" alt="image-2">
+                </div>
+                <div class="about__head-info">
+                    <h3 class="about__info-intro to-uppercase">
+                        about us
+                    </h3>
+                    <h1 class="about__info-title to-capitalize">every meal is a happy meal</h1>
+                    <p class="about__info-desc">There are a lot of ways you can go with your tagline if you’re not
+                        trying to tie in a space.</p>
+                    <a class="about__info-link" href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+
+    <!-- Services section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h3 class="services__intro to-uppercase">services</h3>
+            <h2 class="services__title to-capitalize">our awesome services</h2>
+            <ul class="services__types">
+                <li class="services__type">
+                    <img src="./images/image-3 (2).svg" alt="image-3">
+                    <h3 class="services__type-title">Easy to order</h3>
+                    <p class="services__type-desc">Your Favourite Food delivery Partner.
+                        A Trendy Food Delivery</p>
+                </li>
+                <li class="services__type">
+                    <img src="./images/image-6.svg" alt="image-4">
+                    <h3 class="services__type-title">Fast Delivery</h3>
+                    <p class="services__type-desc">The food at your doorstep. Best Service to fulfil your expectations.
+                    </p>
+                </li>
+                <li class="services__type">
+                    <img src="./images/image-5 (2).svg" alt="image-5">
+                    <h3 class="services__type-title">Secured Payment</h3>
+                    <p class="services__type-desc">Our Commitment is Keeping you Safe.
+                        Pinnacle of reliability.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Services section -->
+
+    <!-- Apps section -->
+    <section id="apps" class="apps">
+        <div class="container">
+            <div class="apps__head">
+                <div class="apps__head-info">
+                    <h3 class="apps__info-intro to-uppercase">download</h3>
+                    <h1 class="apps__info-title to-capitalize">get the qfood app just now</h1>
+                    <p class="apps__info-desc">The brand has built a loyal following, largely because of its
+                        transparency and the streamlined ordering process it offers its customers. </p>
+                    <div class="app__links">
+                        <a class="apps__button" href="https://www.apple.com/app-store/">Download on <span class="word">App Store</span></a>
+                        <a class="apps__button" href="https://play.google.com/store/games?pli=1">Download from <span class="word">Google Play</span></a>
+                    </div>        
+                </div>
+                <div class="apps__head-image">
+                    <img src="./images/image-8 (5).png" alt="image-7">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Apps section -->
+
+    <!-- Recipes section -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <h3 class="recipes__intro to-uppercase">recipes</h3>
+            <h1 class="recipes__title to-capitalize">choose your favourite food</h1>
+            <ul class="recipes__cards">
+                <li class="recipes__card">
+                    <img class="recipes__card-image" src="./images/image-9 (5).png" alt="recipe1">
+                    <p class="recipes__card-cost">$9.40</p>
+                    <h3 class="recipes__card-name">Franch Pazta</h3>
+                    <p class="recipes__card-desc">The only thing we love more than with food is you.</p>
+                    <button class="recipes__card-button button to-capitalize">order now</button>
+                </li>
+                <li class="recipes__card box-5">
+                    <img class="recipes__card-image" src="./images/image-10 (4).png" alt="recipe1">
+                    <p class="recipes__card-cost">$8.38</p>
+                    <h3 class="recipes__card-name">Chicken Masala</h3>
+                    <p class="recipes__card-desc">The only thing we are serious about is food. Eat drink love.</p>
+                    <button class="recipes__card-button button to-capitalize">order now</button>
+                </li>
+                <li class="recipes__card">
+                    <img class="recipes__card-image" src="./images/image-11 (3).png" alt="recipe1">
+                    <p class="recipes__card-cost">$11.40</p>
+                    <h3 class="recipes__card-name">Kacchi Biriani</h3>
+                    <p class="recipes__card-desc">Come sit with us. Take a trip to chow town hasty and tasty.</p>
+                    <button class="recipes__card-button button to-capitalize">order now</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Recipes section -->
+
+    <!-- Footer section -->
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="footer__head">
+                
+                <div class="footer__info1">
+                    <a class="footer__info1-logo" href="./index.html">
+                        <img src="./images/logo (11).svg" alt="footer-logo">
+                    </a>
+                    <p class="footer__info1-desc">Lorem ipsum dolor sit amet, consectetur elit.</p>
+                    <div class="footer__info1-socials">
+                        <a class="footer__info1-social" href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="footer__info1-social" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="footer__info1-social" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="footer__info1-social" href="#">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+               
+                <ul class="footer__info2">
+                    <li class="footer__info2-link">
+                        <a class="footer__link  box-6" href="#">Our Menu</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#">Breakfast</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#">Lunch</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#">Dinner</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#">Snacks</a>
+                    </li>
+                </ul>
+                
+                <ul class="footer__info2">
+                    <li class="footer__info2-link">
+                        <a class="footer__link  box-6" href="#">Useful Link</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#"> Services</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#">  Support</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#"> Conditions</a>
+                    </li>
+                    <li class="footer__info2-link">
+                        <a class="footer__link" href="#"> Security</a>
+                    </li>
+                </ul>
+
+                <div class="footer__info3">
+                    <h1 class="box-6">Stay Connected</h1>
+                    <form class="form" >
+                        <input class="email" type="email" placeholder="Email Address" aria-label="email address" name="email">
+                        <button class="footer__button" type="submit">
+                            <img src="./images/submit (2).png">
+                        </button>
+                    </form>
+                    <a class="footer__info3-link" href="#">Call 1 (500) 258-2654</a>
+                    <a class="footer__info3-link" href="#">Support@foodrs.net</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+
 </body>
 
 </html>

@@ -1,0 +1,81 @@
+// Services section
+
+.services {
+    padding-top: 100px;
+}
+
+.services__intro {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: $primary-color;
+
+    @include for-tablet-only {
+        font-size: 14px;
+    }
+
+    @include for-phone-only {
+        font-size: 12px;
+    }
+}
+
+.services__title {
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 145%;
+    color: $secondary-color;
+    text-align: center;
+    opacity: 0.8;
+
+    @include for-tablet-only {
+        font-size: 35px;
+
+    }
+
+    @include for-phone-only {
+        font-size: 28px;
+    }
+}
+
+.services__types {
+    @include flexItems();
+    margin-top: 60px;
+
+    @include for-phone-only {
+        flex-direction: column;
+        row-gap: 100px;
+    }
+}
+
+.services__type {
+    text-align: center;
+    @include transition-ease();
+}
+
+.services__type:hover {
+
+    @include transform();
+}
+
+.services__type-title {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    color: $secondary-color;
+    opacity: 0.8;
+    margin-top: 25px;
+}
+
+.services__type-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $secondary-color;
+    opacity: 0.6;
+    max-width: 362px;
+    margin-top: 15px;
+}
